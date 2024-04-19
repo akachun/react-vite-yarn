@@ -1410,7 +1410,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.14.5, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.2":
   version: 7.24.4
   resolution: "@babel/runtime@npm:7.24.4"
   dependencies:
@@ -1927,6 +1927,64 @@ __metadata:
     "@types/react":
       optional: true
   checksum: 10c0/3af6ea4891e6fa8091e666802adffe7718b3cd390a10fa9229a5f40f8efded9f3918ea01b046103d93923d41cc32119505ebb6bde76cad07a87b6cf4f2119347
+  languageName: node
+  linkType: hard
+
+"@react-spring/animated@npm:~9.7.3":
+  version: 9.7.3
+  resolution: "@react-spring/animated@npm:9.7.3"
+  dependencies:
+    "@react-spring/shared": "npm:~9.7.3"
+    "@react-spring/types": "npm:~9.7.3"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/5151da4fa7da010bb2edbee05871aa7a4aea8763fe617389d17605810aa0dd817374205e5fb3930b650f4a7f25fcdf23205fdfb7365686ff75888bdfd0b39839
+  languageName: node
+  linkType: hard
+
+"@react-spring/core@npm:~9.7.3":
+  version: 9.7.3
+  resolution: "@react-spring/core@npm:9.7.3"
+  dependencies:
+    "@react-spring/animated": "npm:~9.7.3"
+    "@react-spring/shared": "npm:~9.7.3"
+    "@react-spring/types": "npm:~9.7.3"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/e28c05de8435bf2eaf8481f8acdf093909d4be9881a9a854c51dfac7c2d5562088d0fb2ce04e2f07e1b3bf621d8da3ab57bf6fedb4fdc954e3aa263bc1e393af
+  languageName: node
+  linkType: hard
+
+"@react-spring/shared@npm:~9.7.3":
+  version: 9.7.3
+  resolution: "@react-spring/shared@npm:9.7.3"
+  dependencies:
+    "@react-spring/types": "npm:~9.7.3"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/afb03ed28ccf62efa4012e531c3659999bb364d1e0eb0fb729b962f9bd21a0b772a2d98e862062c9c32c06edf72327afcc45984d9eb22fdd961706b6ddf6950d
+  languageName: node
+  linkType: hard
+
+"@react-spring/types@npm:~9.7.3":
+  version: 9.7.3
+  resolution: "@react-spring/types@npm:9.7.3"
+  checksum: 10c0/d645044f3cc9ceb7c4f6c4d061aaf6660018568a1553d05638f56b3328c5f91597ee4118334abe22fc8f07f5ee02f054340170c1d52e11b3faea22888b5170d4
+  languageName: node
+  linkType: hard
+
+"@react-spring/web@npm:^9.7.3":
+  version: 9.7.3
+  resolution: "@react-spring/web@npm:9.7.3"
+  dependencies:
+    "@react-spring/animated": "npm:~9.7.3"
+    "@react-spring/core": "npm:~9.7.3"
+    "@react-spring/shared": "npm:~9.7.3"
+    "@react-spring/types": "npm:~9.7.3"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/a5b4847a2921a29a3e8ce569f4951abeb268b6e8eb230f8c49d98709216b2b3a23ba1e58628c51c9eaa0bd20d83f9d7b8f8f03df98215e933de4c66c39e17fe1
   languageName: node
   linkType: hard
 
@@ -3047,6 +3105,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/animejs@npm:^3":
+  version: 3.1.12
+  resolution: "@types/animejs@npm:3.1.12"
+  checksum: 10c0/21d10ed4fbaa99572e252b4d6e666b62a19089f63b13b0e9f8edf5fb0b708afc2b38c3055c52f6a4771bc71793d7a7aec83754c16d0e5606a0ad92b34778ba61
+  languageName: node
+  linkType: hard
+
 "@types/aria-query@npm:^5.0.1":
   version: 5.0.4
   resolution: "@types/aria-query@npm:5.0.4"
@@ -3330,6 +3395,15 @@ __metadata:
   dependencies:
     "@types/react": "npm:*"
   checksum: 10c0/87604407eca6884c5b4d4657cb511dc5ba28ea1cfa5d0ce1fc2d659a7ad1b64ae85dcda60e3f010641f9a52a6a60dfcaa6be3b0d0de9d624475052a13dae01f4
+  languageName: node
+  linkType: hard
+
+"@types/react-transition-group@npm:^4.4.10":
+  version: 4.4.10
+  resolution: "@types/react-transition-group@npm:4.4.10"
+  dependencies:
+    "@types/react": "npm:*"
+  checksum: 10c0/3eb9bca143abc21eb781aa5cb1bded0c9335689d515bf0513fb8e63217b7a8122c6a323ecd5644a06938727e1f467ee061d8df1c93b68825a80ff1b47ab777a2
   languageName: node
   linkType: hard
 
@@ -3766,6 +3840,13 @@ __metadata:
     json-schema-traverse: "npm:^0.4.1"
     uri-js: "npm:^4.2.2"
   checksum: 10c0/41e23642cbe545889245b9d2a45854ebba51cda6c778ebced9649420d9205f2efb39cb43dbc41e358409223b1ea43303ae4839db682c848b891e4811da1a5a71
+  languageName: node
+  linkType: hard
+
+"animejs@npm:^3.2.2":
+  version: 3.2.2
+  resolution: "animejs@npm:3.2.2"
+  checksum: 10c0/f43dfcc0c743a2774e76fbfcb16a22350da7104f413d9d1b85c48128b0c078090642809deb631e21dfa0a40651111be39d9d7f694c9c1b70d8637ce8b6d63116
   languageName: node
   linkType: hard
 
@@ -4523,6 +4604,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"d3-timer@npm:^1.0.9":
+  version: 1.0.10
+  resolution: "d3-timer@npm:1.0.10"
+  checksum: 10c0/7e77030a206861e4e626754c689795d43f036fb07a7f8ca6360eb8b7cbe6f52bf43c9c4297ae9a9a906e4de594212702f83c0cde23d4e20d8689a4211e438155
+  languageName: node
+  linkType: hard
+
 "debug@npm:2.6.9":
   version: 2.6.9
   resolution: "debug@npm:2.6.9"
@@ -4746,6 +4834,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dom-helpers@npm:^5.0.1":
+  version: 5.2.1
+  resolution: "dom-helpers@npm:5.2.1"
+  dependencies:
+    "@babel/runtime": "npm:^7.8.7"
+    csstype: "npm:^3.0.2"
+  checksum: 10c0/f735074d66dd759b36b158fa26e9d00c9388ee0e8c9b16af941c38f014a37fc80782de83afefd621681b19ac0501034b4f1c4a3bff5caa1b8667f0212b5e124c
+  languageName: node
+  linkType: hard
+
 "dotenv-expand@npm:^10.0.0":
   version: 10.0.0
   resolution: "dotenv-expand@npm:10.0.0"
@@ -4798,9 +4896,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.740
-  resolution: "electron-to-chromium@npm:1.4.740"
-  checksum: 10c0/34c539dae7f1b4b3f59c4900cd0eba45ae59bd0c3a460e8eb5aa78fdd0303215bdb29d8927d340f7b7594c4c4ea942a320d499622b4aa5922d0d89a872f63ec0
+  version: 1.4.744
+  resolution: "electron-to-chromium@npm:1.4.744"
+  checksum: 10c0/48711f84ef7b60ef5990543163250c293752aa59133dc5d66577a3287c361182c7c68d79c74c3e97939dab47fb753b0d2f810cc3f17f05552ed774a94328e6a0
   languageName: node
   linkType: hard
 
@@ -5537,6 +5635,26 @@ __metadata:
   version: 0.2.0
   resolution: "forwarded@npm:0.2.0"
   checksum: 10c0/9b67c3fac86acdbc9ae47ba1ddd5f2f81526fa4c8226863ede5600a3f7c7416ef451f6f1e240a3cc32d0fd79fcfe6beb08fd0da454f360032bde70bf80afbb33
+  languageName: node
+  linkType: hard
+
+"framer-motion@npm:^11.1.7":
+  version: 11.1.7
+  resolution: "framer-motion@npm:11.1.7"
+  dependencies:
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    "@emotion/is-prop-valid": "*"
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  peerDependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c0/33ab19674170b88df2ceed655d95851e23ff270a0239a2bc84f464f6ae9632868d2c1b440e1be0187cd99cedd88ed22fab1e6234f67c40a2d215bd99c15dad31
   languageName: node
   linkType: hard
 
@@ -6630,6 +6748,15 @@ __metadata:
     graceful-fs:
       optional: true
   checksum: 10c0/4f95b5e8a5622b1e9e8f33c96b7ef3158122f595998114d1e7f03985649ea99cb3cd99ce1ed1831ae94c8c8543ab45ebd044207612f31a56fd08462140e46865
+  languageName: node
+  linkType: hard
+
+"kapellmeister@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "kapellmeister@npm:3.0.1"
+  dependencies:
+    d3-timer: "npm:^1.0.9"
+  checksum: 10c0/a6d8e20abf508ed816f5f6311073beb9584de8d7f59fae801540c954b6e6159460c86e754fd8449779fae935ac5f2775f3aa678d9070749b96cb6735bd4b9d3e
   languageName: node
   linkType: hard
 
@@ -7771,7 +7898,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.7.2":
+"prop-types@npm:^15.5.10, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -7983,6 +8110,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-move@npm:^6.5.0":
+  version: 6.5.0
+  resolution: "react-move@npm:6.5.0"
+  dependencies:
+    "@babel/runtime": "npm:^7.14.5"
+    kapellmeister: "npm:^3.0.1"
+    prop-types: "npm:^15.7.2"
+  peerDependencies:
+    react: ">=16.3.0"
+  checksum: 10c0/dd6a762bf39e54c436dfb33cd453f1502dd79b5ddc6e5329b4d559349808f0ddaecb70356a5d9674fd8a1cdc8795efe7c48d8fb634c19f3acb80f53f70f43af3
+  languageName: node
+  linkType: hard
+
+"react-reveal@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "react-reveal@npm:1.2.2"
+  dependencies:
+    prop-types: "npm:^15.5.10"
+  peerDependencies:
+    react: ^15.3.0 || ^16.0.0
+  checksum: 10c0/6bc548a7e7b416e62df061aaa8f51bc2944e50e7271398ee22af4a3224b59d9247518859753d64370131f69807a7ebb2320ff4b151c375e043995afb5004247d
+  languageName: node
+  linkType: hard
+
 "react-router-dom@npm:^6.22.3":
   version: 6.22.3
   resolution: "react-router-dom@npm:6.22.3"
@@ -8007,11 +8158,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-transition-group@npm:^4.4.5":
+  version: 4.4.5
+  resolution: "react-transition-group@npm:4.4.5"
+  dependencies:
+    "@babel/runtime": "npm:^7.5.5"
+    dom-helpers: "npm:^5.0.1"
+    loose-envify: "npm:^1.4.0"
+    prop-types: "npm:^15.6.2"
+  peerDependencies:
+    react: ">=16.6.0"
+    react-dom: ">=16.6.0"
+  checksum: 10c0/2ba754ba748faefa15f87c96dfa700d5525054a0141de8c75763aae6734af0740e77e11261a1e8f4ffc08fd9ab78510122e05c21c2d79066c38bb6861a886c82
+  languageName: node
+  linkType: hard
+
 "react-vite-yarn@workspace:.":
   version: 0.0.0-use.local
   resolution: "react-vite-yarn@workspace:."
   dependencies:
     "@chromatic-com/storybook": "npm:^1.3.3"
+    "@react-spring/web": "npm:^9.7.3"
     "@storybook/addon-essentials": "npm:^8.0.8"
     "@storybook/addon-interactions": "npm:^8.0.8"
     "@storybook/addon-links": "npm:^8.0.8"
@@ -8020,18 +8187,25 @@ __metadata:
     "@storybook/react": "npm:^8.0.8"
     "@storybook/react-vite": "npm:^8.0.8"
     "@storybook/test": "npm:^8.0.8"
+    "@types/animejs": "npm:^3"
     "@types/react": "npm:^18.2.66"
     "@types/react-dom": "npm:^18.2.22"
+    "@types/react-transition-group": "npm:^4.4.10"
     "@typescript-eslint/eslint-plugin": "npm:^7.2.0"
     "@typescript-eslint/parser": "npm:^7.2.0"
     "@vitejs/plugin-react-swc": "npm:^3.5.0"
+    animejs: "npm:^3.2.2"
     eslint: "npm:^8.57.0"
     eslint-plugin-react-hooks: "npm:^4.6.0"
     eslint-plugin-react-refresh: "npm:^0.4.6"
     eslint-plugin-storybook: "npm:^0.8.0"
+    framer-motion: "npm:^11.1.7"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
+    react-move: "npm:^6.5.0"
+    react-reveal: "npm:^1.2.2"
     react-router-dom: "npm:^6.22.3"
+    react-transition-group: "npm:^4.4.5"
     storybook: "npm:^8.0.8"
     typescript: "npm:^5.2.2"
     vite: "npm:^5.2.0"
@@ -8984,9 +9158,9 @@ __metadata:
   linkType: hard
 
 "tocbot@npm:^4.20.1":
-  version: 4.25.0
-  resolution: "tocbot@npm:4.25.0"
-  checksum: 10c0/b6ca2ca5a3549e7c4007843e0b41cb113656006a59f5aa2328bcccdc8b780f25b642c1d0d64e02255c97a3ba5072ae5085a403cd2b560fb3ee30bd59924fe273
+  version: 4.27.0
+  resolution: "tocbot@npm:4.27.0"
+  checksum: 10c0/5eb5ff092271aec64f7589a95870219e6ed37c0532859a34904e20bbefdad015c577aed11cdf050a0fcab185e12d70b202256d2fe590254e515864e5738afa5d
   languageName: node
   linkType: hard
 

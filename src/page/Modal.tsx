@@ -1,4 +1,4 @@
-import { ReactElement, useEffect, useState } from "react";
+import { MouseEvent, ReactElement, useEffect, useRef, useState } from "react";
 import Styled, { keyframes } from "styled-components";
 
 interface ContainerProps {
@@ -63,6 +63,7 @@ const Container = Styled.div<ContainerProps>`
     animation-timing-function: linear;
     animation-name: ${({$modalOpen})=> $modalOpen ? slideUp : slideDown};
     animation-fill-mode: forwards;
+    color: #000000;
 `
 
 const ModalHeader = Styled.div`
@@ -75,16 +76,27 @@ const ModalHeader = Styled.div`
 const ModalContent = Styled.div`
     padding: 20px 20px 20px 20px;
 `
+
 const Modal = ({modalHandler, children, ...props} : ModalProps) => {
     const [animate, setAnimate] = useState(false);
     const [localVisible, setLocalVisible] = useState(props.$modalOpen);
+    const modalRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
+        const mousedownHandler = (ev: Event) => {
+            if (modalRef.current && !modalRef.current.contains(ev.target as HTMLElement)) {
+                modalHandler(false);
+            }
+        }
+        document.addEventListener("mousedown", mousedownHandler as EventListener);
         if(localVisible && !props.$modalOpen) {
             setAnimate(true);
             setTimeout(()=>setAnimate(false),250);
         }
         setLocalVisible(props.$modalOpen);
+        return () => {
+            document.removeEventListener('mousedown', mousedownHandler as EventListener);
+        }
     },[props.$modalOpen, localVisible]);
 
     const closeModal = () => {
@@ -93,7 +105,7 @@ const Modal = ({modalHandler, children, ...props} : ModalProps) => {
     if(!localVisible && !animate) return null;
     return (
         <Overlay $modalOpen={props.$modalOpen}>
-            <Container {...props}>
+            <Container {...props} ref={modalRef}>
                 <ModalHeader>
                     <span>Modal Title</span>
                     <button onClick={closeModal}>X</button>

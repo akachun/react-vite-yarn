@@ -1,22 +1,32 @@
-import AnimeJS from "./components/animejs"
-import FramerMotion from "./components/framerMotion"
-import AnimatedBars from "./components/reactMove"
-import ReactSpring from "./components/reactSpring"
-import ReactTransitionGroup from "./components/reactTransitionGroup"
-
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom"
+import AnimatePage from "./page/AnimatePage"
+import PopupTestPage from "./page/PopupTestPage"
 
 function App() {
   
   return (
     <>
-      <div style={{display:'flex', alignItems:'center', flexDirection:'column', width: '500px'}}>
-        <ReactSpring/>
-        <FramerMotion/>
-        <ReactTransitionGroup/>
-        <AnimatedBars/>
-        <AnimeJS/>
-      </div>      
-    </>
+      <BrowserRouter>
+        <div style={{display:"flex", alignItems:"flex-start", flexDirection:"column",height:"100vh"}}>
+          <div>
+            <button>
+              <Link to="/animate">
+                animate page
+              </Link>
+            </button>
+            <button>
+              <Link to="/popup">
+                popup page
+              </Link>
+            </button>
+          </div>
+          <Routes>
+            <Route path="/animate" element={<AnimatePage/>}/>
+            <Route path="/popup" element={<PopupTestPage/>}/>        
+          </Routes>
+        </div>
+      </BrowserRouter>
+  </>
   )
 }
 

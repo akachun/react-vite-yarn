@@ -2,13 +2,14 @@ import { styled } from "styled-components";
 import Picker, { PickerItemProps } from "../components/Picker";
 import { useState } from "react";
 
-const ListCenter = styled.div`
+const ListCenter = styled.div<{ itemHeight: number; visibleCount: number }>`
   box-sizing: border-box;
   border-top: 1.3px solid black;
   border-bottom: 1.3px solid black;
-  height: 50px;
-  position: absolute;
-  top: 90px;
+  height: ${({ itemHeight }) => itemHeight}px;
+  position: relative;
+  top: ${({ itemHeight, visibleCount }) =>
+    (Math.floor(visibleCount / 2) + 1) * itemHeight}px;
   width: 100%;
   background-color: gray;
   border-radius: 10px;
@@ -50,6 +51,8 @@ const valueMap = new Map([
 ]);
 
 const PickerTestPage = () => {
+  const itemHeight = 30;
+  const visibleCount = 5;
   const [valueList, setValueList] = useState(monthValues);
 
   const unitHandler = (v: PickerItemProps) => {
@@ -64,10 +67,20 @@ const PickerTestPage = () => {
   };
   return (
     <>
-      <ListCenter />
+      <ListCenter itemHeight={itemHeight} visibleCount={visibleCount} />
       <PickerWrapper>
-        <Picker list={list} onSelectedChange={unitHandler} />
-        <Picker list={valueList} onSelectedChange={valueHandler} />
+        <Picker
+          list={list}
+          onSelectedChange={unitHandler}
+          itemHeight={itemHeight}
+          visibleCount={visibleCount}
+        />
+        <Picker
+          list={valueList}
+          onSelectedChange={valueHandler}
+          itemHeight={itemHeight}
+          visibleCount={visibleCount}
+        />
       </PickerWrapper>
     </>
   );

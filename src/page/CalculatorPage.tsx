@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { numberToKorean } from "../util/number";
+import { numberToKorean, numberWithCommas } from "../util/number";
 import { styled } from "styled-components";
 const MAX_AMOUNT = 1000000000;
 const PadWrapper = styled.div`
@@ -43,8 +43,8 @@ const CalculatorPage = () => {
   };
   return (
     <>
-      <p>{amount}</p>
-      <p>{amount > 9999 && numberToKorean(amount)}</p>
+      <p>{numberWithCommas(amount)}</p>
+      {amount > 9999 ? <p>{numberToKorean(amount)}</p> : <p>&nbsp;</p>}
       <div>
         <button onClick={() => add(10000)}>+1만</button>
         <button onClick={() => add(100000)}>+10만</button>

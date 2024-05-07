@@ -13,4 +13,9 @@ const numberToKorean = (number: number): string => {
   return result.trimEnd() + "원";
 };
 
-export { numberToKorean };
+const numberWithCommas = (x: number): string => {
+  if (!x) return "0";
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+};
+
+export { numberToKorean, numberWithCommas };
